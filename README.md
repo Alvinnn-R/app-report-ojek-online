@@ -9,31 +9,6 @@ CLI-based reporting application for ride-hailing (ojek online) service with Post
 3. **View Top Area** - Display areas with the most orders (pickup/dropoff/overall)
 4. **View Orders By Hour** - Analyze peak and off-peak hours for orders
 
-## 🏗️ Project Structure
-
-```
-app_report_ojek_online/
-├── cmd/
-│   ├── home.go              # Main menu
-│   ├── report_monthly.go    # Monthly report feature
-│   ├── top_customer.go      # Top customer feature
-│   ├── top_area.go          # Top area feature
-│   ├── orders_by_hour.go    # Orders by hour feature
-│   └── clear_screen.go      # Screen utility
-├── database/
-│   └── db.go                # Database connection
-├── handler/
-│   └── report.go            # Handler layer
-├── model/
-│   └── report.go            # Data models
-├── repository/
-│   ├── report.go            # Repository layer
-│   └── report_test.go       # Unit tests
-├── service/
-│   └── report.go            # Service layer
-└── main.go                  # Entry point
-```
-
 ## 🚀 Installation
 
 ### Prerequisites
@@ -67,12 +42,6 @@ connStr := "user=postgres password=root dbname=db_aplikasi_ojek_online sslmode=d
 
 ```bash
 go run .
-```
-
-## 🧪 Running Tests
-
-```bash
-go test ./repository -v
 ```
 
 ## 📊 Features Detail
