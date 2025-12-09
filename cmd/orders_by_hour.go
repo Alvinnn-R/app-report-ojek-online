@@ -3,22 +3,18 @@ package cmd
 import (
 	"fmt"
 	"os"
-	// "os"
 	"session-14/handler"
 )
 
-func ReportMonthly(handlerReport handler.ReportHandler) {
-	var status, choice string
+func OrdersByHour(handlerReport handler.ReportHandler) {
+	var choice string
 
-	fmt.Print("Status : ")
-	fmt.Scanln(&status)
-
-	handlerReport.ReportMonthly(status)
+	handlerReport.OrdersByHour()
 
 	fmt.Print("\nApakah kamu ingin melanjutkan ke halaman lain? (ya/tidak): ")
 	fmt.Scanln(&choice)
 
-	switch choice { 
+	switch choice {
 	case "ya":
 		ClearScreen()
 	case "tidak":
